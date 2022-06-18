@@ -27,7 +27,7 @@ const HeadText = styled.h1`
 // fake data generator
 const getItems = (count, prefix) =>
   Array.from({ length: count }, (v, k) => k).map((k) => {
-    const randomId = Math.floor(Math.random() * 1000);
+    const randomId = Math.random();
     return {
       id: `item-${randomId}`,
       prefix,
@@ -117,6 +117,9 @@ function DragList() {
       result.destination.index,
       removedElement
     );
+
+    const d = listCopy[result.destination.droppableId]
+    console.log("d :: ", d)
 
     const finalList = setListsColor(listCopy);
 

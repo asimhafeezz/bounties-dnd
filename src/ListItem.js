@@ -11,7 +11,7 @@ const CardHeader = styled.div`
 const DragItem = styled.div`
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background: lightgray;
+  background: rgb(122, 92, 153);
   margin: 0 0 15px 0;
   display: grid;
   grid-gap: 20px;
@@ -32,7 +32,8 @@ const divLineStyle = (bgColor) => ({
   display: "flex",
   justifyContent: "space-evenly",
   alignItems: "center",
-  borderRadius: "0 0 10px 10px"
+  borderRadius: "0 0 10px 10px",
+  height: "30px"
 });
 
 const ListItem = ({ item, index }) => {
@@ -49,7 +50,7 @@ const ListItem = ({ item, index }) => {
             <CardHeader>{item.content}</CardHeader>
             <Text>{item.text}</Text>
             <div style={divLineStyle(item.color)}>
-              <p>Rewind</p>
+              <p>Reward</p>
               <p>$300</p>
             </div>
           </DragItem>
