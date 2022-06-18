@@ -4,24 +4,25 @@ import styled from "styled-components";
 
 const CardHeader = styled.div`
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
   padding: 10px;
 `;
 
 const DragItem = styled.div`
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: rgb(122, 92, 153);
   margin: 0 0 15px 0;
   display: grid;
   grid-gap: 20px;
   flex-direction: column;
   min-width: 200px;
+  color: white;
 `;
 
 const Text = styled.p`
-  font-size: 13px;
+  font-size: 15px;
   padding: 0 10px;
+  margin-bottom: -6px;
 `;
 
 //change bgColor accordingly
